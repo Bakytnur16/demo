@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/icon88.png" type="image/x-icon">
+    <title>Instagram</title>
+    <style>
+        body {
+            background: #f6f6f6;
+            margin:0;
+            padding:0;
+        }
+        body nav,main {
+            margin:0 20%;
+            display: flex;
+        }
+        header {
+            background: white;
+            border: 1px solid rgb(199, 197, 197);
+            width:100%;
+            height:55px;
+        }
+        nav {
+            display: flex;
+            align-items: center; /* 内容一致中心呈现 */
+        }
+        li {
+            list-style-type: none;
+            display:inline;
+            margin-right:10px;
+        }
+        main {
+            padding-top: 40px;
+            /* vertical-align: top; */
+        }
+        article {
+            width:65%;
+            border: none;
+            height: auto;
+        }
+        article :first-child {
+            background-color: white;
+            height:100px;
+            border-radius: 4px;
+            border: 1px solid rgb(199, 197, 197);
+        }
+        article :last-child {
+            border: 1px solid rgb(199, 197, 197);
+            background-color: white;
+            margin-top: 30px;
+            height:1000px;  /* 暂时举例 */
+        }
+        aside {
+            width:35%;
+            border:none;
+            height:auto;
+            margin-left: 10px;
+        }
+        aside>div:first-child{
+            border: 1px solid rgb(2, 67, 243); /* 用户头像 昵称 姓名 */
+            height:80px;
+            margin-bottom:10px;
+        }
+        aside>div:nth-child(2) div {
+            line-height: 50px;
+            justify-content: space-between;
+            border: 1px solid rgb(247, 10, 10);  /* 推荐功能 */
+        }
+        div span {
+            font-weight: bold;
+            font-size: 15px;
+            padding-left: 10px;
+            margin-right: 180px;
+        }
+        span + a {
+            color: black;
+            font-size: 10px;
+            font-weight: bold;
+        }
+
+        .Recommend {
+            border: 1px solid rgb(243, 52, 84); /*5个举例推荐  */
+            height:300px;
+        }
+        a {
+            text-decoration: none;
+        }
+        footer {
+            margin-top: 20px;
+            height:50px;
+            align-items: center;
+            padding: 10px 20px;
+        }
+        footer a,span {
+            color: gray;
+            font-size: 10px;
+        }
+        label {
+            margin-left:250px;
+            width:200px;
+            border: 1px solid rgb(199, 197, 197);
+            border-radius: 4px;
+            align-items: center;
+            display: flex;
+            height: 25px;
+            margin-right:100px;
+            padding-left: 10px;
+        }
+        label input {
+            width: 90%;
+            border: none;
+            background-color: transparent;
+            outline-style: none;
+        }
+        li img {
+            width:25px;
+            height:23px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a><img src="icon/tag.png" width="120px"></a>
+            <label > <!-- 搜索栏 -->
+                <img src="icon/icon.png" width="14px" height="12px">
+                <input placeholder="搜索">
+            </label>
+            <div>
+                <ul>
+                    <li><a href="#">
+                        <img src="icon/4icon.png">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="icon/icon3.png">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="icon/icon2.png">
+                    </a></li>
+                    <li><a href="#">
+                        <img src="icon/heart.png">
+                    </a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <div>快拍</div>
+            <div>帖子</div>
+        </article>
+        <aside>
+            <div></div>
+            <div>
+                <div><span>为你推荐</span><a href="#">查看全部</a></div>
+                <div class="Recommend"></div>
+            </div>
+            <footer>
+                <a href="#">关于</a>
+                <a href="#">帮助</a>
+                <a href="#">新闻中心</a>
+                <a href="#">API</a>
+                <a href="#">工作</a>
+                <a href="#">隐私</a>
+                <a href="#">举例....</a><br>
+                <span>© 2021INSTAGRAM | FACEBOOK 旗下产品</span>
+            </footer>
+        </aside>
+    </main>
+</body>
+</html>
